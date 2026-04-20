@@ -40,8 +40,8 @@ you: Write a haiku about a dog.
 
 assistant:
 
-Furry ball of joy
-Tail wags with happy delight
+Furry ball of joy \n
+Tail wags with happy delight \n
 Faithful canine friend
 
 ----
