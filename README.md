@@ -1,7 +1,7 @@
 Instructions for how to setup llama3.2-1B-Instruct modal on an A10 GPU on Modal (on-demand GPU service)
 
-1. Install Modal and sign-up - go to www.modal.com
-2. Go to hugging face, and follow the instructions to get access to the model llama3.2-1B-Instruct
+1. Install Modal and sign-up - go to www.modal.com.
+2. Go to hugging face, and follow the instructions to get access to the model llama3.2-1B-Instruct.
 3. Setup access token on hugging face for the model - look up instructions on how to do this.  
 4. Setup the modal secret with your hugging face token - this will allow modal to pull the model weights and graph inside of the A10 GPU container:
 
@@ -9,7 +9,7 @@ Instructions for how to setup llama3.2-1B-Instruct modal on an A10 GPU on Modal 
 
 5. Run 'modal deploy test_modal_server_llama3.2-1B-Instruct.py' on a local terminal to get an SGLang server running in an A10 GPU container on Modal.
 
-After this completes, you can test the endpoint with curl on a termianal. For example (replace the url with your server url - go to the app inside modal and copy the url in the app pane):
+After this completes, you can test the endpoint with curl on a terminal. For example (replace the url with your server url - go to the app inside modal and copy the url in the app pane):
 
 curl https://rohunkshirsagar--llama-sglang-test-serve.modal.run/v1/chat/completions \
   -H "Content-Type: application/json" \
@@ -23,9 +23,9 @@ curl https://rohunkshirsagar--llama-sglang-test-serve.modal.run/v1/chat/completi
   }'
 
 
-6. Install OpenAI client API.  Create a virtual environment with uv (the preferred way in the python community today) OR use the usual python .venv syntax to setup a virtual environment, and then run: uv venv && source .venv/bin/activate && uv pip install openai
+6. Install OpenAI client API.  Create a virtual environment with uv (the preferred way in the python community today) OR use the usual python .venv syntax to setup a virtual environment, and then run: 'uv venv && source .venv/bin/activate && uv pip install openai'.
 
-Alternatively, you can use the usual python virtual environment aka venv approach in a terminal
+Alternatively, you can use the usual python virtual environment aka venv approach in a terminal:
 
 python3 -m venv .venv
 source .venv/bin/activate     # Windows: .venv\Scripts\activate
