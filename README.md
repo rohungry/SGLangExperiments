@@ -1,4 +1,4 @@
-Instructions for how to setup llama3.2-1B-Instruct modal on an A10 GPU on Modal (on-demand GPU service)
+#<h1 align="center">Instructions for how to setup llama3.2-1B-Instruct modal on an A10 GPU on Modal (on-demand GPU service)</h1>
 
 1. Install Modal and sign-up - go to www.modal.com.
 2. Go to hugging face, and follow the instructions to get access to the model llama3.2-1B-Instruct.
