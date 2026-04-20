@@ -7,9 +7,9 @@ Instructions for how to setup llama3.2-1B-Instruct modal on an A10 GPU on Modal 
 
 'modal secret create huggingface-secret HF_TOKEN=hf_yourNewTokenHere'
 
-5. Run ' modal deploy test_modal_server_llama3.2-1B-Instruct.py' to 
+5. Run 'modal deploy test_modal_server_llama3.2-1B-Instruct.py' on a local terminal to get an SGLang server running in an A10 GPU container on Modal.
 
-You can test the endpoint with curl on the command line - for example (replace the url with your server url - go to the app inside modal and copy the url):
+After this completes, you can test the endpoint with curl on a termianal. Gor example (replace the url with your server url - go to the app inside modal and copy the url in the app pane):
 
 curl https://rohunkshirsagar--llama-sglang-test-serve.modal.run/v1/chat/completions \
   -H "Content-Type: application/json" \
@@ -23,7 +23,7 @@ curl https://rohunkshirsagar--llama-sglang-test-serve.modal.run/v1/chat/completi
   }'
 
 
-6. Create a virtual environment with uv (the preferred way in the python community today) OR use the usual python .venv syntax to setup a virtual environment, and then run: uv venv && source .venv/bin/activate && uv pip install openai
+6. Install OpenAI client API.  Create a virtual environment with uv (the preferred way in the python community today) OR use the usual python .venv syntax to setup a virtual environment, and then run: uv venv && source .venv/bin/activate && uv pip install openai
 
 Alternatively, you can use the usual python virtual environment aka venv approach in a terminal
 
@@ -40,8 +40,10 @@ you: Write a haiku about a dog.
 
 assistant:
 
-Furry ball of joy \n
-Tail wags with happy delight \n
+Furry ball of joy
+
+Tail wags with happy delight
+
 Faithful canine friend
 
 ----
