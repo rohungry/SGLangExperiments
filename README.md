@@ -9,7 +9,7 @@ Instructions for how to setup llama3.2-1B-Instruct modal on an A10 GPU on Modal 
 
 5. Run 'modal deploy test_modal_server_llama3.2-1B-Instruct.py' on a local terminal to get an SGLang server running in an A10 GPU container on Modal.
 
-After this completes, you can test the endpoint with curl on a termianal. Gor example (replace the url with your server url - go to the app inside modal and copy the url in the app pane):
+After this completes, you can test the endpoint with curl on a termianal. For example (replace the url with your server url - go to the app inside modal and copy the url in the app pane):
 
 curl https://rohunkshirsagar--llama-sglang-test-serve.modal.run/v1/chat/completions \
   -H "Content-Type: application/json" \
