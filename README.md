@@ -32,7 +32,7 @@ source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install --upgrade pip
 pip install openai
 
-7. You can test in a terminal by running 'python test_modal_local_client_llama3.2-1B-Instruct.py'.   You should now have a multi-turn llama3.2-1B-Instruct chatbot running on modal on the endpoint below, with prompt access via the terminal.  Here is an example of how to use it from the terminal:
+7. You can test this in a terminal by running 'python test_modal_local_client_llama3.2-1B-Instruct.py'.   You should now have a multi-turn llama3.2-1B-Instruct chatbot running on modal on the endpoint below, with prompt access via the terminal.  Here is an example of how to use it from the terminal:
 
 you: Write a haiku about a dog.
 
@@ -48,7 +48,6 @@ Faithful canine friend
 
 ----
 That worked! Here is some log information you can see on Modal:
-
 
 Apr 19 at 15:43:46.039
 [2026-04-19 22:43:46] Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 42, token usage: 0.00, #running-req: 0, #queue-req: 0, cuda graph: True, input throughput (token/s): 0.03
